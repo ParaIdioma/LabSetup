@@ -1,0 +1,21 @@
+{
+  "coc.preferences.useQuickfixForLocations": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "javascript",
+    "json",
+    "less",
+    "python",
+    "reason",
+    "typescript",
+    "yaml"
+  ],
+  "suggest.noselect": true,
+  "coc.preferences.extensionUpdateCheck": "daily",
+  "markdownlint.config": {
+    "MD013": false,
+    "MD022": false,
+    "MD041": false
+  }
+}

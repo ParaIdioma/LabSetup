@@ -1,0 +1,47 @@
+---
+- name: Update repositories cache
+  apt:
+    update_cache: yes
+
+
+- name: Install core libraries using APT
+  become: true
+  apt:
+     pkg:
+          - git
+          - stow
+          - autotools-dev
+          - libgtk-3-dev
+          - nodejs
+          - npm
+          - X11-apps
+          - firefox
+          - vlc
+          - inkscape
+          - filezilla
+          - remmina
+          - audacity
+          - curl
+          - wget
+          - flatpak
+          - snap
+          - p7zip-full
+          - pciutils
+          - rsync
+          - ssh
+          - renameutils
+          - htop
+          - ranger
+          - tmux
+          - gnome-shell-extensions
+          - fasd
+          - fd-find
+          - fzf
+          - ripgrep
+          - googler
+          - bat
+          - translate-shell
+          - octave
+
+
+

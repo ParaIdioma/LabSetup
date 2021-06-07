@@ -1,0 +1,4 @@
+- name: Install psychtoolbox
+  become: true
+  apt:
+    name:  octave-psychtoolbox-3-nonfree

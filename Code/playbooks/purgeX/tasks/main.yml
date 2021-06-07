@@ -1,0 +1,12 @@
+---
+- name: Purge unnecessary packages
+  become: true
+  apt:
+         pkg:
+         - aisleriot
+         - gnome-sudoku
+         - gnome-mines
+         - rhythmbox
+         - thunderbird
+         - gnome-mahjongg
+         state: absent

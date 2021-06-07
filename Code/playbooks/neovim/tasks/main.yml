@@ -1,0 +1,12 @@
+---
+- name: Install neovim
+  become: true
+  snap:
+    name:
+          - nvim
+
+
+- name: Symlink dotfiles
+  shell: stow -d ~/.dotfiles/home -t ~/ {{ item }}
+  loop:
+         - nvim

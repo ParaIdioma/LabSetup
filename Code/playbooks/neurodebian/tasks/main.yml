@@ -1,0 +1,13 @@
+---
+- name: neurodebian sources
+  become: true
+  shell: wget -O- http://neuro.debian.net/lists/focal.de-m.full | tee /etc/apt/sources.list.d/neurodebian.sources.list
+
+- name: neurodebian add key
+  apt_key:
+          keyserver: hkp://pool.sks-keyservers.net:80
+          id: 0xA5D32F012649A5A9
+
+- name: Update repositories cache
+  apt:
+    update_cache: yes

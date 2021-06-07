@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  connection: local
+  remote_user: "{{ localuser }}"
+  vars:
+          user: "{{ localuser }}"
+  roles:
+        - core
+        - dotfiles # fix path to cloned
+        - neovim
+        - neurodebian
+        - psychtoolbox
+        # - anaconda
+        # - psychopy
+        # - labstreaminglayer
+        - purgeX
+        - finalize

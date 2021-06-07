@@ -1,0 +1,5 @@
+---
+- name: Symlink the bin directory
+  shell: stow -d ~/Documents/.dotfiles/home -t ~/ {{ item }}
+  loop:
+          - bin
